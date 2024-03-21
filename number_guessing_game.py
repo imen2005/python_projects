@@ -17,7 +17,7 @@ def attempting(attempts,target):
 def num_guessing():
     print("Welcome to the number guessing game!")
     print("I am thinking of a number between 1 and 100.")
-    difficulty = input("Choose a difficulty. Type \'easy\' or \'hard\': ")
+    difficulty = input("Choose a difficulty. Type \'easy\' or \'hard\': ").lower()
     if difficulty == "easy":
         attempts = 10
     else:
@@ -28,7 +28,7 @@ def num_guessing():
 again = True
 while again:
     num_guessing()
-    play = input("Do you want to play again? Type \'y\' or \'n\': ").lower
+    play = input("Do you want to play again? Type \'y\' or \'n\': ").lower()
     if play == "n":
         again = False
     else:
